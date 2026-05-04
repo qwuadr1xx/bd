@@ -1,6 +1,5 @@
 FROM postgres:16-bookworm
 
-# Устанавливаем Python, Perl и инструменты для компиляции C
 RUN apt-get update && apt-get install -y --no-install-recommends \
     postgresql-plpython3-16 \
     postgresql-plperl-16 \

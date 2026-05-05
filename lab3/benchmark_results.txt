@@ -1,0 +1,32 @@
+=====================================================
+    ОТЧЕТ О НАГРУЗОЧНОМ ТЕСТИРОВАНИИ (PGBENCH)       
+=====================================================
+Дата: Mon 20 Apr 2026 19:32:01 MSK
+Параметры: 20 клиентов, 4 потока, 60 секунд
+База данных: itmo_db (Схема: itmo_bd)
+=====================================================
+
+--- Триггер: C (Native) ---
+number of transactions actually processed: 359459
+number of failed transactions: 0 (0.000%)
+latency average = 3.335 ms
+tps = 5997.322203 (without initial connection time)
+
+--- Триггер: PL/Python ---
+number of transactions actually processed: 399996
+number of failed transactions: 0 (0.000%)
+latency average = 2.997 ms
+tps = 6672.902445 (without initial connection time)
+
+--- Триггер: PL/Perl ---
+number of transactions actually processed: 416577
+number of failed transactions: 0 (0.000%)
+latency average = 2.877 ms
+tps = 6951.151780 (without initial connection time)
+
+--- Триггер: PL/pgSQL ---
+number of transactions actually processed: 354911
+number of failed transactions: 0 (0.000%)
+latency average = 3.377 ms
+tps = 5922.060820 (without initial connection time)
+
